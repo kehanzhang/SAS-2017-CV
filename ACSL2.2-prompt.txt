@@ -1,0 +1,56 @@
+Link :https://drive.google.com/file/d/0B9P-qKQwUYaAZlMyZnVPT20zdFE/view
+
+or read below 
+
+
+PROBLEM: This program requires you to take a string of digits and form a sequence of
+
+numbers from that string. The numbers in the sequence are in increasing order and they are
+
+formed as follows: The first digit of the input string, called it d, indicates that the first number in
+
+the sequence is d digits long and comes from the following d digits in the input string. Each of
+
+the subsequent numbers in the output sequence must have the least value possible while still
+
+being greater than the number before it. These digits will come from the end of the input string,
+
+taking digits from right to left in the order that they appear.
+
+Consider the input string 1314159265. The first digit, a 1, indicates that the first integer in the
+
+sequence will be one digit in length; it always come from the left side of the string. Thus, the 3
+
+is the first number in the sequence. The next numbers in the sequence come from the right side
+
+of the input string (i.e., consider the digits 5, 6, 2, 9, 5, 1, 4, and 1, in that order. The 5 is added
+
+because it is larger than the 3. Next, the 6 is added. The next digit is a 2 but it is not larger than
+
+6, so it is combined with the next digit, a 9, to form the number 29. The number 29 is larger than
+
+6, so 29 is added to the output sequence. Next, 51 is added to the output sequence. The
+
+remaining digits combine to form 41, but it is not added to the output sequence because it is not
+
+larger than 51. Thus, the output sequence from 1314159265 is 3, 5, 6, 29, and 51, in that order.
+
+INPUT: There will be 5 lines of input. Each will contain a string of digits. Its length will be at
+
+least 2 and no more than 20.
+
+OUTPUT: The numbers in the sequence formed as described above, separated by a single space.
+
+A number can’t start with a leading 0.
+
+SAMPLE INPUT: SAMPLE OUTPUT:
+
+1. 1314159265 1. 3 5 6 29 51
+
+2. 11223344 2. 1 4 43 322
+
+3. 225897257 3. 25 75 279
+
+4. 412342987656784352 4. 1234 2534 8765 67892
+
+5. 33984567176534321 5. 398 1234 3567 17654
